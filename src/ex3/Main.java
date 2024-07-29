@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        ContoCorrente contoCorrente = new ContoCorrente("Arianna", 1500);
-        ContoOnline contoOnline = new ContoOnline("Arianna", 800, 600);
+        ContoCorrente contoCorrente = new ContoCorrente("Eddy", 7800);
+        ContoOnline contoOnline = new ContoOnline("Eddy", 2300, 600);
 
         boolean continua = true;
 
@@ -29,8 +29,8 @@ public class Main {
             }
 
             System.out.println("Vuoi continuare? (Y/N)");
-            String risposta = scanner.next();
-            if (!risposta.equalsIgnoreCase("Y")) {
+            String risposta = scanner.next().toLowerCase();
+            if (risposta.equals("n")) {
                 continua = false;
             }
         }

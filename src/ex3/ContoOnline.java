@@ -21,7 +21,6 @@ public class ContoOnline extends ContoCorrente {
     public void preleva(double x) throws BancaException {
         if (x > maxPrelievo) {
             throw new BancaException("hai superato il limite del prelievo");
-
         }
         super.preleva(x);
     }
